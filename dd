@@ -1,0 +1,7 @@
+import requests
+url = "https://ipinfo.io/"
+url2 = "/json"
+url3 = raw_input(str("ip"))
+urlall =  url + url3 + url2 
+r = requests.get(urlall)
+print(r.json())
